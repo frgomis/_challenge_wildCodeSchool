@@ -142,7 +142,7 @@ nav ul li:first-child {
 div.hero {
   width: 100vw;
   height: 49vh;
-  background-image: url('images/polynesia-3021072_1920.jpg');
+  background-image: url('../images/polynesia-3021072_1920.jpg');
   background-repeat: no-repeat; 
   background-size:100% ;
   background-position: 50%;
