@@ -1,3 +1,6 @@
+main  {
+    height: 75vh;
+}
 main h2 {
     text-align: left;
     margin-left: 7%;
@@ -6,9 +9,74 @@ main h2 {
 }
 
 form {
+    max-width: 82vw;
+    height: 50vh;
     margin: 0 auto;
-    width: 82vw;
-    margin-bottom: 10%;
-    border: gray 1.8px solid;
     border-collapse: collapse;
+    font-weight: 600;
+}
+form>div {
+    width: 90%;
+    display: grid;
+    grid-gap: 5%;
+    margin-bottom: 1.5%;
+}
+div.civility,
+div.email {
+    height: 16%;
+}
+
+input,
+textarea {
+    border: palevioletred 1px dotted;
+    border-radius: 3.5px;
+    box-shadow: 1px 2.5px 5px lightpink;
+}
+div.btn{
+position: relative;
+}
+
+button.btn-validator{
+    cursor:pointer;
+    border: rgba(216, 112, 147, 0.748) 2px solid;
+    box-shadow: 2px 3.5px 5px rgba(216, 112, 147, 0.748);
+    border-radius: 5px;
+    background-color: lightpink;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.25rem;
+    line-height: 3rem;
+    padding: 0.5% 1.5%;
+    position: absolute;
+    bottom: -38px;
+    right: 17%;
+}
+.show {
+    visibility: hidden;
+    display: none;
+}
+button.btn-validator.active {
+   color: #eb008a;
+   font-style: italic;
+    font-weight: 800;
+}
+
+.toHide.active {
+    visibility: hidden;
+    display: none;
+}
+.show.active {
+    visibility: visible;
+    display: block;
+}
+@media screen and (max-width: 720px) {
+    body{
+        background-color: rgba(255, 182, 193, 0.172);
+    }
+    button.btn-validator {
+        position: absolute;
+        bottom: 38px;
+        right: 17%;
+    }
+
 }

@@ -59,7 +59,6 @@ div.left img{
   transform: rotate(180deg);
 }
 .headTitle ul {
-  
   width: 90%;
   display: flex;
   padding: 1.55%;
@@ -75,8 +74,8 @@ li.btnClose{
 }
 li.btnClose button{
   background: #ffcad3;
-  width: 100%;
-  height: 100%;
+  width: 44px;
+  height: 44px;
   border:#fff solid 2.5px;
   border-radius: 50px;
   font-size:3rem;
@@ -144,8 +143,9 @@ div.hero {
   height: 49vh;
   background-image: url('../images/polynesia-3021072_1920.jpg');
   background-repeat: no-repeat; 
-  background-size:100% ;
-  background-position: 50%;
+  background-size:cover;
+  background-position-x:50%;
+  background-position-y:50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -171,3 +171,39 @@ footer {
   background-color: #ffcad3;
   
 }
+@media screen and (max-width: 720px) {
+  body {
+    background-color: rgba(255, 182, 193, 0.172);
+  }
+
+  h1,
+  h2,
+  .hero h2 {
+    font-size: 2vh
+  }
+  .headTitle img {
+    width: 24px;
+  }
+  li.btnClose button {
+    width: 24px;
+    height: 24px;
+    font-size: 1.2rem;
+    margin-left: 1.5rem;
+  }
+  li.home {
+    width: 24px;
+    background-color: #ffcad3;
+  }
+  li.breadcrumb {
+    padding: 0.35%;
+    font-size: 1.4rem;
+  }
+
+  nav {
+    font-size: 1.3vh;
+    font-weight: 100;
+    padding: 2%;
+  }
+}
+
+
