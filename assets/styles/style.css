@@ -9,7 +9,7 @@ html{
 }
 body {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   font-size: 1.5rem;
   color: #303030;
   overflow-x: hidden;
@@ -23,6 +23,7 @@ a:hover{
 }
 h1,h2{
   font-family: 'Permanent Marker', cursive;
+  color: #084e93;
 }
 img{
   width: 100%;
@@ -137,26 +138,29 @@ nav ul li:first-child {
 }
 
 /* ======= ** MAIN **====== */
+main{
+  /* border: red solid 1px; */
+  height: auto;
+}
 /* == hero == */
 div.hero {
   width: 100vw;
-  height: 49vh;
+  height: 100vh;
   background-image: url('../images/polynesia-3021072_1920.jpg');
-  background-repeat: no-repeat; 
-  background-size:cover;
-  background-position-x:50%;
-  background-position-y:50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 55%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
 }
 .hero h2{
   font-size: 5rem;
+  color: white;
 }
 /* == about == */
 div.about {
-  height: 20vh;
+  height: auto;
   margin: 3.55% 0 2.5% 2.5%;
 }
 .about h2 {
@@ -169,8 +173,9 @@ footer {
   bottom: 0;
   left: 0;
   background-color: #ffcad3;
-  
 }
+
+/* ======= MOBILE - MOBILE ========== */
 @media screen and (max-width: 720px) {
   body {
     background-color: rgba(255, 182, 193, 0.172);

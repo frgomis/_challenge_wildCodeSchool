@@ -1,3 +1,7 @@
+main {
+    height: 100%;
+}
+
 main h2 {
     text-align: left;
     margin-left: 7%;
@@ -39,3 +43,30 @@ tbody tr:nth-child(even) {
 tbody tr:last-of-type {
     border-bottom: 2px gray solid;
 }
+
+/* ====== MOBILE VERSION - MOBILE VERSION ========== */
+@media screen and (max-width: 720px) {
+    body {
+      background-color: rgba(255, 182, 193, 0.172);
+    }
+  
+
+    h2
+   {
+      font-size: 2vh
+    }
+    table{
+        font-size: 1.5vh;
+    }
+    th{
+        font-size: 1.6vh;
+    }
+    th,
+    td {
+        padding: 3% 5%;
+        text-align: center; 
+         text-align: left;
+    }
+    
+    
+  }
